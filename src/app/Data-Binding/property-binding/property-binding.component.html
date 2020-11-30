@@ -1,0 +1,18 @@
+<div>
+    <h2>One-way Data-Binding Using Property-Binding!!</h2>
+    <input type="text" value="saukat" [id]="myId"><!--Simple data binding -->
+    <input type="text" value="saukat" id="{{myId}}"><!--using Interpolation-->
+    <input type="text" value="saukat" id="{{myId}}" disabled="false"><!--This is the dom problem-->
+    <input type="text" value="saukat" id="{{myId}}" [disabled]="false"><!--yes se can solve this pblm by using property binding-->
+    
+    <input type="text" value="saukat" id="{{myId}}" disabled="{{isDiabled}}"><!--Not possible-->
+    <input type="text" value="saukat" id="{{myId}}" [disabled]="isDiabled"><!--yes,it can
+    possible because property binding sholud able to acees all type of data type 
+but simple Interpolation failed to bind as property binding of Boolean data type-->
+<p>property binding sholud able to acees all type of data type 
+    but simple Interpolation failed to bind as property binding of Boolean data type</p>
+    <h2>Example0.1</h2>
+    <input type="text" [disabled]="isDiabled==false? true:false" value="saukat">
+
+   
+</div>

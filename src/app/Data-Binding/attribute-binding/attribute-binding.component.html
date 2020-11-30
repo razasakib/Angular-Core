@@ -1,0 +1,36 @@
+<div>
+    <h2>Attribute Binding!!</h2>
+    <p>In Interpolation and Property binding, we discussed that they are dealing with 
+        the HTML element properties (DOM Properties) and not with the attributes.</p>
+   <h3> Why do we need attribute data binding?</h3>
+    <p> In some situations, we may need to bind HTML element attributes.
+         For example, colspan, area, height, width, placeholder, value, etc.
+          There are a number of HTML attributes. HTML does not have any corresponding DOM (Document Object Model) properties.
+           So, in this case, we need to bind to HTML element attributes.
+    </p>
+
+    <div>
+        <h2>Example-01</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th [attr.colspan]="mergeCount">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td [attr.rowspan]="mergeCount">Saukat</td>
+                    <td>Afsar</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                   
+                    <td>Rajna</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

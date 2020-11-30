@@ -1,0 +1,24 @@
+<div>
+    <div *ngFor="let data of [10,21,30,41,50,63,70,80];
+    index as i;
+    first as f;
+    let l=last;
+    let e=even;
+    let o=odd;
+    ">
+        <span>{{i}}</span>&nbsp;
+        <span>{{data}}</span>&nbsp;
+        <span>{{f}}</span>&nbsp;
+        <span>{{l}}</span>&nbsp;
+        <span>{{e}}</span>&nbsp;
+        <span>{{o}}</span>
+    </div>
+
+
+    <!--Trackby concept used to enhance the performance and decreses the execution time-->
+      <h2>Using trackBy</h2>
+     <div *ngFor="let product of product;trackBy:trackById;">
+
+      </div>
+    
+</div>
